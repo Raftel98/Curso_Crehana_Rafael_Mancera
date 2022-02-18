@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="calculadora.js"></script>
+    <script type="text/javascript" src="ocultar.js"></script>
+
+</head>
+<body>
+    <div id="Facturadora">
+
+            <div class="btn" onclick="myFunction2()">1</div>
+
+            <div class="btn" onclick="myFunction()">2</div>
+     
+            <div class="btn" onclick="myFunction3()">3</div>
+        
+    </div>
+
+        <div id="caja_productos">
+            <h1>Selección de producto</h1>
+            <div id="formulario">
+                <form>
+
+                    <label for="fname">Nombre de producto </label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de producto"> <br>
+
+                    <label for="fname">Categoría del producto</label><br>
+                    
+                            <select name="OS" id="categorias">
+                                <option value="Televisores">Televisores</option> 
+                                <option value="Freidoras de aire">Freidoras de aire</option> 
+                                <option value="Escritorios">Escritorios</option>
+                                <option value="Neveras">Nevera</option>                                 
+                            </select>
+                            <br>
+
+                    <label for="fname">Referencia</label><br>
+                    <input type="text" name="referencia" id="referencia" placeholder="Número de referencia"> <br>   
+                    
+                                      
+                    <input type="button" value="Continuar" onclick="myFunction()"> <br>
+
+
+                </form>
+
+            </div>
+        </div>
+    
+        <div id="caja_padre_form">
+                    <h1>Calculadora de IVA</h1>
+                <div id="formulario">
+                    <form>
+
+                        <label for="fname">Introduzca el precio del producto para calcular el IVA </label><br>
+                        <input type="text" name="precio" id="precio" placeholder="Precio"> <br>
+
+                        <input type="button" value="Calcular" onclick="CalcularIVA()"> <br>
+
+                        <label for="fname">El producto tiene un IVA de: </label><br>
+                        <input type="text" name="iva" id="iva" placeholder="IVA" disabled> <br>
+
+                        <label for="fname">El precio sin IVA del producto es: </label><br>
+                        <input type="text" name="total" id="total" placeholder="Precio sin IVA" disabled> <br>    
+                        
+                        <input type="button" value="Continuar" onclick="myFunction3();descuentoCategoria()"> <br>
+
+                    </form>
+
+                </div>
+                
+        </div>  
+
+        <div id="Factura_final">
+            <h1>Cotización</h1>
+            <div id="formulario">
+                
+                <div id="dos_columnas">
+                    <div id="col_1">
+                        <label for="fname">Nombre del producto </label><br>
+                        <input type="text" name="nombreproduct" id="nombreproduct" placeholder="Nombre del producto" disabled> <br>
+                    </div> 
+                    <div id="col_2">
+                        <label for="fname">Referencia del producto </label><br>
+                        <input type="text" name="referenciap" id="referenciap" placeholder="Referencia del producto" disabled> <br>
+                    </div>  
+                </div>   
+                
+                <div id="dos_columnas">
+                    <div id="col_1">
+                        <label for="fname">Categoria del producto </label><br>
+                        <input type="text" name="categoriaproducto" id="categoriaproducto" placeholder="Categoria del producto" disabled> <br>
+                    </div> 
+                    <div id="col_2">
+                        <label for="fname">Descuento por categoria </label><br>
+                        <input type="text" name="descuentoproduct" id="descuentoproduct" placeholder="Descuento por categoria" disabled> <br>
+                    </div>  
+                </div> 
+
+                <div id="dos_columnas">
+                    <div id="col_1">
+                        <label for="fname">Precio neto del producto </label><br>
+                        <input type="text" name="neto" id="neto" placeholder="neto" disabled> <br>
+                    </div> 
+                    <div id="col_2">
+                        <label for="fname">Iva del producto </label><br>
+                        <input type="text" name="ivaproducto" id="ivaproducto" placeholder="IVA Producto" disabled> <br>
+                    </div>  
+                </div> 
+
+                <div id="dos_columnas">
+                    <div id="col_1">
+                        <label for="fname">Precio Final con Descuento </label><br>
+                        <input type="text" name="preciofinalproduct" id="preciofinalproduct" placeholder="Precio Final" disabled> <br>
+                    </div>                     
+                </div>
+
+                <input type="button" value="Imprimir" onclick=""> <br>
+
+            </div>
+        </div>
+        
+</div> 
+        
+
+        
+</div> 
+    
+    
+</body>
+</html>
